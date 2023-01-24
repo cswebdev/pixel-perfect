@@ -311,7 +311,7 @@
         margin-top: 50px;
         margin-left: 10px;
         max-width: 100%;
-        
+
 
     }
 
@@ -338,7 +338,7 @@
     }
 
     #aside-container-pfp {
-        flex: 1;
+
         border: 1px solid transparent;
         border-radius: 50%;
         justify-content: center;
@@ -346,7 +346,7 @@
 
         max-height: 180px;
         position: absolute;
-        right: 355px;
+        right: 345px;
         top: 210px;
         border: 8px solid white;
 
