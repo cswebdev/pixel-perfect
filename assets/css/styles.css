@@ -7,7 +7,7 @@
 
     body {
         height: 100%;
-        width: auto;
+        width: 100%;
         background-color: rgb(244, 244, 244);
         font-family: 'Lato', sans-serif;
 
@@ -68,7 +68,7 @@
 
     #nav-socials {
         float: right;
-        flex: 1;
+        display: flex;
         padding-right: 160px;
         background-color: rgb(255, 255, 255);
 
@@ -128,8 +128,8 @@
 
     #content-body {
         display: flex;
-        width: 68.5%;
-        margin: auto;
+        margin-left: 261px;
+
         background-color: rgb(244, 244, 244);
 
     }
@@ -139,9 +139,9 @@
 
         flex-direction: column;
         margin-top: 50px;
-        margin-right: 20px;
+        width: 751px;
         background-color: rgb(244, 244, 244);
-
+        margin-bottom: 275px;
     }
 
 
@@ -151,27 +151,26 @@
 
         flex-direction: column;
 
-        max-width: 750px;
+        width: 750px;
         height: 920px;
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(244, 244, 244);
         text-align: center;
         margin-bottom: 50px;
 
         border: 1px solid rgb(228, 225, 225);
 
-
     }
 
     .container-image {
         width: 100%;
-        max-height: 475px;
+        max-height: 471px;
         object-fit: cover;
 
 
     }
 
     .primary-content-container-text {
-        margin-top: 45px;
+        margin-top: 50px;
     }
 
     .tag-travel {
@@ -179,9 +178,10 @@
         color: rgb(234, 47, 47);
         font-family: 'Lato', sans-serif;
         font-variant: small-caps;
+        font-weight: 800;
         letter-spacing: 1px;
-        margin-bottom: 0;
-        padding-bottom: 0;
+        margin-bottom: 0px;
+
         line-height: 0;
     }
 
@@ -192,7 +192,8 @@
         font-variant: small-caps;
         line-height: 0;
         margin-top: 30px;
-        letter-spacing: .2px;
+        letter-spacing: .4px;
+        padding-left: 4.5px;
 
     }
 
@@ -237,7 +238,7 @@
 
     .decorative-line {
         display: block;
-        border-bottom: 1px solid rgb(244, 244, 244);
+        border-bottom: 1px solid rgb(226, 226, 226);
         width: 90%;
         margin-top: 0;
         margin-bottom: 5px;
@@ -305,27 +306,33 @@
 
 
     #secondary-content-container {
-        flex: 1;
+        /* display: flex; */
+        display: flex;
         flex-direction: column;
-        background-color: yellow;
+
+        /* background-color: yellow; */
         margin-top: 50px;
-        margin-left: 10px;
-        max-width: 100%;
+        margin-left: 30px;
+
+        width: 360px;
+
 
 
     }
 
     #aside-section-right {
 
-        margin: auto;
+        margin: 0;
+        padding: 0;
         background-color: rgb(200, 200, 148);
+        padding-bottom: 0;
     }
 
     #aside-profile-container {
         float: right;
-        width: 100%;
+        width: 360px;
         height: 545px;
-        margin-bottom: 80px;
+        margin-bottom: 38px;
         border: 1px solid red;
         background-color: rgb(255, 255, 255);
 
@@ -334,7 +341,7 @@
 
     #aside-container-image {
         width: 100%;
-        max-height: 180px;
+        max-height: 182px;
     }
 
     #aside-container-pfp {
@@ -416,8 +423,34 @@
         color: red;
     }
 
-    #container-popular-posts {
-        padding: 100px;
+    #popular-post-continer {
+
+
         border: 1px solid red;
-        max-width: 100%;
+        width: 360px;
+        height: 985px;
+        background-color: rgb(255, 255, 255);
+        margin-bottom: 36px;
+    }
+
+    #latest-posts-container {
+        border: 1px solid red;
+        max-width: 360px;
+        height: 515px;
+        margin-bottom: 39px;
+
+    }
+
+    #insta-feed-aside {
+        border: 1px solid red;
+        max-width: 360px;
+        height: 574px;
+    }
+
+    footer {
+        margin: auto;
+        width: 86.5%;
+        border: 1px solid red;
+        height: 325px;
+        bottom: 0;
     }
