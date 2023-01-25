@@ -201,6 +201,8 @@
 
         }
 
+
+
         .container-text {
             font-family: 'lato', sans-serif;
             margin-top: 45px;
@@ -309,30 +311,33 @@
         }
 
         #first-primary-content-container {
-            margin-bottom: 50px;
+            margin-bottom: 53px;
         }
 
         #second-primary-content-container {
             height: 924px;
 
-            margin-bottom: 46px;
+            margin-bottom: 43px;
         }
 
 
         #second-container-image {
             height: 475px;
+            margin-bottom: -5px;
         }
 
 
         #third-primary-content-container {
             height: 950px;
-            margin-bottom: 52px;
+            padding-bottom: 49.5px;
             /* background-color: aquamarine; */
         }
 
         #third-content-image {
             height: 500px;
         }
+
+
 
         #fourth-primary-content-container {
             margin-bottom: 0px;
@@ -342,29 +347,57 @@
             background-color: yellow;
         }
 
+        .page-number {
+            display: flex;
+            flex-direction: row;
+            margin-top: 49px;
+            margin-left: 1px;
+            font-family: 'Lato' sans-serif;
+           
+        }
+
+        .page {
+            border: 1px solid rgb(186, 186, 186);
+            padding: 7px 11px;
+            margin-right: 6px;
+            color: rgb(186, 186, 186);
+        }
+        .page:nth-child(1) {
+            background-color: red;
+            color:white
+        }
+        
+        .page:nth-child(3){
+            padding: 7px 12px;
+        }
+        .page:nth-child(4){
+            padding: 7px 11px;
+        }
+        .page-next{
+            display: flex;
+            border: 1px solid rgb(186,186,186);
+            justify-content: center;
+            font-size: 13px;
+            padding-top: 9px;
+            padding-right: 4px
+        }
+        .fa-solid {
+            margin-left: 13px;
+            font-weight: 800px;
+        }
         /************************| aside |***************************/
         #secondary-content-container {
-            /* display: flex; */
             display: flex;
             flex-direction: column;
 
-            /* background-color: yellow; */
             margin-top: 50px;
             margin-left: 30px;
 
             width: 360px;
 
-
-
         }
 
-        /* #aside-section-right {
 
-            margin: 0;
-            padding: 0;
-            background-color: rgb(157, 157, 50);
-            padding-bottom: 0;
-        } */
 
         #aside-profile-container {
 
@@ -454,6 +487,7 @@
             color: rgb(77, 77, 77);
             font-size: 12px;
             justify-content: center;
+            padding-left: 7px;
 
         }
 
