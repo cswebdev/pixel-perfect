@@ -132,7 +132,7 @@
         #content-body {
             display: flex;
             margin-left: 261px;
-            height: 4085px;
+
 
             background-color: rgb(244, 244, 244);
 
@@ -277,6 +277,7 @@
             font-size: 14px;
             float: left;
             margin-left: 40px;
+            margin-top: 5px;
         }
 
         .footer-author {
@@ -337,7 +338,6 @@
         #third-primary-content-container {
             height: 950px;
             margin-bottom: 49.5px;
-            /* background-color: aquamarine; */
         }
 
         #third-content-image {
@@ -406,6 +406,7 @@
             margin-left: 30px;
 
             width: 360px;
+
 
         }
 
@@ -551,6 +552,7 @@
         }
 
         #popular-post-container p {
+            display: flex;
             color: rgb(194, 194, 194);
             text-transform: capitalize;
             font-family: 'lato', sans-serif;
@@ -560,38 +562,203 @@
             margin-top: 10px;
             margin-left: 30px;
             padding-top: 0;
+            padding-bottom: 0;
+
 
         }
 
+        /* LATEST POSTS CONTAINER. NOT TO BE CONFUSED WITH POPULAR POST CONTAINER */
+
         #latest-posts-container {
+            display: flex;
+            flex-direction: column;
             border: 1px solid red;
             max-width: 360px;
             height: 515px;
-            margin-bottom: 39px;
+            padding: 0;
+            margin: 0;
 
         }
+
+
+        #latest-posts-container h2 {
+            padding-top: 4px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            font-variant: small-caps;
+            font-family: 'oswald', sans-serif;
+            letter-spacing: .3px;
+            margin-bottom: 10px;
+        }
+
+        .post-image-container {
+            display: flex;
+
+        }
+
+
+
+        .post-image-container h3 {
+            display: flex;
+            flex-wrap: nowrap;
+            float: left;
+            font-variant: small-caps;
+            font-size: 18px;
+            margin-left: 17px;
+            margin-bottom: 0;
+            letter-spacing: .4px;
+            word-spacing: v 0px;
+            letter-spacing: .1px;
+            width: 100%;
+            font-family: 'oswald', sans-serif;
+            font-weight: 700;
+            margin-top: 9px;
+            padding-bottom: 0;
+            padding-top: 0;
+
+
+        }
+
+        .post-image-container p {
+
+
+            padding-top: 0;
+            margin-top: 7px;
+            float: left;
+            margin-left: 16px;
+            text-transform: capitalize;
+            font-family: 'lato', sans-serif;
+            font-weight: 500;
+            font-size: 13px;
+            letter-spacing: 0.5px;
+            font-style: italic
+        }
+
+        .post-image-container img {
+            border: 1px solid red;
+            margin-top: 14px;
+            max-width: 28%;
+            margin-bottom: 80px;
+            margin-bottom: 6.5px;
+            float: left;
+            display: flex;
+            margin-bottom: 15px;
+            object-fit: fill;
+            margin-left: 8.2%;
+        }
+
+        .line-aside-latest {
+            padding-top: 0;
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: .8px;
+            margin-bottom: 0;
+
+        }
+
+
+
+        #beach-bum {
+            margin-top: -1px;
+            margin-bottom: 1px;
+        }
+
+        #beach-bum p {
+            width: 100%;
+        }
+
+        #ticket-img {
+            margin-top: 14px;
+            margin-left: 30px;
+            max-width: 100px;
+            margin-bottom: 12px;
+
+
+        }
+
+        #ticket-for-one h3,
+        p {
+            margin-top: 8px;
+            padding-top: 0px;
+            letter-spacing: .01px;
+
+        }
+
+
+        #ticket-for-one p {
+            margin-bottom: 40px;
+
+        }
+
+        #gather-img {
+            margin-top: 15.5px;
+        }
+
+        #gather-paints h3 {
+            margin-top: 10px;
+            letter-spacing: .2px;
+        }
+
 
         #insta-feed-aside {
+            margin-top: 60px;
 
-            border: 1px solid red;
-            max-width: 360px;
-            height: 574px;
-
-
+            width: 360px;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            height: 590px;
         }
 
-        #insta-feed-aside img {
+        .header-insta-aside h2 {
+            font-family: 'lato', sans-serif;
+            font-size: 26.5px;
+            font-weight: 500;
+
+
+            margin: 0;
+            margin-top: 16px;
+            padding: 0;
+        }
+
+        #aside-insta-images {
             display: flex;
-            padding: 10px;
-            flex-direction: column-reverse;
-           
-            
-            margin: auto;
-            max-height: 60px;
-            max-width: 60px;
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 0;
+            margin-top: 16px;
+
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            padding-bottom: 30px;
         }
 
-        footer {
+
+
+        #aside-insta-images img {
+            width: 50%;
+            max-height: 144px;
+            max-width: 144px;
+            margin: 7px;
+            margin-bottom: 5px;
+
+
+
+
+
+        }
+
+
+        /* footer {
 
             margin: auto;
             width: 86.5%;
@@ -600,4 +767,4 @@
             bottom: 0;
 
 
-        }
+        } */
