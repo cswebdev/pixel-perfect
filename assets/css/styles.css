@@ -1090,43 +1090,12 @@ footer {
 
 }
 
-@media screen and (max-width:912) {
-    #secondary-content-container {
-        display: flex;
-        flex-direction: column;
-        float: left;
-    }
 
-    main {
-        min-width: 430px;
-        margin: 0;
-    }
-
-    nav,
-    ul,
-    li,
-    #nav-links {
-        float: left;
-        text-align: left;
-        margin-left: 0;
-        padding-left: 0;
-        margin-right: 0;
-        padding-right: 0;
-    }
-
-    #nav-socials {
-
-        visibility: hidden;
-
-    }
-
-}
-
-@media screen and (max-width:828px) {
+@media screen and (max-width:988px) {
     body {
         display: flex;
         flex-direction: column;
-        width: 520px;
+        width: 100%;
     }
 
     header {
@@ -1148,38 +1117,62 @@ footer {
     #bars {
         visibility: visible;
     }
-}
 
-main,
-.content-container,
-#primary-content-container,
-#secondary-content-container {
-    float: none;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 0;
-    padding-left: 0;
-    padding-top: 0;
-    margin-top: 0;
-}
 
-#aside-section-right {
-    width: 100%;
-    margin: auto;
-}
+    main,
+    .content-container,
+    #primary-content-container,
+    #secondary-content-container {
+        float: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 0;
+        padding-left: 0;
+        padding-top: 0;
+        margin-top: 0;
+    }
 
-#aside-profile img {
-    object-fit: contain;
-}
+    #aside-section-right {
+        width: 100%;
+        margin: auto;
+    }
 
-#aside-profile-container {
-    width: 700px;
-}
+    #aside-profile-background #aside-profile-container {
+        width: 916px;
+    }
 
-button {
-    margin: auto;
+    button {
+        margin: auto;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header {
+        position: relative;
+        min-width: 50%;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    #nav-links {
+        visibility: hidden;
+    }
+
+    #nav-socials {
+        visibility: hidden;
+
+    }
+
+    #bars {
+        visibility: visible;
+    }
+
 }
