@@ -170,7 +170,7 @@ p {
 
 
 .content-container {
-
+    position: relative;
     flex-direction: column;
     width: 100%;
     background-color: rgb(255, 255, 255);
@@ -182,6 +182,8 @@ p {
 }
 
 .container-image {
+    display: block;
+    display: relative;
     width: 100%;
     height: 548px;
     object-fit: cover;
@@ -189,6 +191,68 @@ p {
 
 
 }
+
+.overlay {
+
+    position: absolute;
+    width: 869px;
+    height: 548px;
+    top: 0;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+#second-container-image+.overlay {
+    visibility: visible;
+
+    height: 555px;
+
+}
+
+#third-content-image+.overlay {
+    height: 580px;
+}
+
+.overlay-icons {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 548px;
+    font-size: 62px;
+
+}
+
+.overlay-icons i {
+    color: rgba(255, 255, 255, 0);
+    padding: 5px;
+}
+
+
+
+.container-image+.overlay:hover {
+
+    color: white;
+    visibility: visible;
+    background-color: rgba(255, 0, 0, 0.275);
+    margin: 0;
+    padding: 0;
+}
+
+.overlay:hover .overlay-icons i {
+
+    color: white;
+    transform: scale(1.1);
+
+}
+
+.overlay>.overlay-icons i:hover {
+    transform: scale(1.3);
+    z-index: 1;
+
+}
+
 
 .primary-content-container-text {
     margin-top: 49px;
@@ -348,6 +412,7 @@ i:hover {
     padding-bottom: 1px;
 }
 
+
 #first-primary-content-container {
     margin-bottom: 56px;
 }
@@ -363,6 +428,7 @@ i:hover {
     height: 552px;
     margin-bottom: 0px;
 }
+
 
 #third-primary-content-container {
     height: 1100px;
@@ -442,6 +508,9 @@ i:hover {
     margin-right: 6px;
 }
 
+#pageOne:hover {
+    transform: scale(1.05);
+}
 
 .page:nth-child(1) {
     background-color: red;
@@ -454,12 +523,27 @@ i:hover {
     width: 25px;
 }
 
+#pageTwo:hover {
+    background-color: red;
+    color: white;
+    transform: scale(1.05);
+}
+
 .page:nth-child(3) {
     width: 25.1px;
 }
 
+#pageThree:hover {
+    background-color: red;
+    color: white;
+    transform: scale(1.05);
+}
 
-
+#pageFour:hover {
+    background-color: red;
+    color: white;
+    transform: scale(1.05);
+}
 
 .page-next {
     display: flex;
@@ -475,10 +559,21 @@ i:hover {
 
 }
 
+.page-next:hover {
+    transform: scale(1.05);
+    background-color: red;
+
+}
+
 .fa-solid {
     margin-left: 13px;
     font-weight: 800px;
     font-size: 14px;
+}
+
+.page-next:hover .fa-solid {
+    color: white;
+    font-size: 15.5px;
 }
 
 /************************| aside |***************************/
@@ -1046,7 +1141,6 @@ footer {
 #footer-images {
     display: flex;
     flex-direction: row;
-    max-width: 0px;
     margin-top: 28px;
     margin-left: 0;
     margin-right: 0;
@@ -1058,7 +1152,7 @@ footer {
 }
 
 #footer-images img {
-    width: auto;
+    width: 208px;
     height: 209px;
     object-fit: cover;
 }
@@ -1305,6 +1399,7 @@ footer {
 
     #fourth-text-section {
         margin-top: 84px;
+        background-color: rgb(255, 255, 255);
     }
 
     #fourth-travel-tag {
@@ -1457,6 +1552,8 @@ footer {
         letter-spacing: .1px;
     }
 
+
+
     .social-rounded-border {
         padding: 20px;
         height: 10px;
@@ -1470,11 +1567,20 @@ footer {
 
     }
 
+    .fa-brands:hover {
+        color: red;
+        transform: scale(1.1);
+    }
+
     #aside-rounded-socials div>i {
-        font-size: 23px;
+        font-size: 28px;
 
     }
 
+    .social-rounded-border+i:hover {
+        color: red;
+        background-color: red;
+    }
 
     .footer-socials {
         margin-top: 34px;
@@ -1837,7 +1943,7 @@ footer {
     #footer-images img:nth-of-type(8) {
         display: none;
     }
-   
+
     #footer-bottom h3 {
         font-size: 25px;
         font-weight: 500;
